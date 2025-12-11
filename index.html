@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Room</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Video Background -->
+    <video id="bg-video" playsinline preload="auto" loop>
+        <source src="assets/cozy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="title-box">
+            <h1 class="title">Mood Room</h1>
+            <p class="subtitle">Choose Your Vibe</p>
+        </div>
+
+        <div class="mood-buttons">
+            <button class="mood-btn" data-video="assets/chill.mp4">
+                <span>🌊 Chill</span>
+            </button>
+            <button class="mood-btn active" data-video="assets/cozy.mp4">
+                <span>😊 Happy</span>
+            </button>
+            <button class="mood-btn" data-video="assets/night.mp4">
+                <span>😴 Lazy</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Volume Control -->
+    <div class="volume-control">
+        <span class="volume-icon">🔊</span>
+        <input type="range" class="volume-slider" min="0" max="100" value="70">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
